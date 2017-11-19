@@ -1,6 +1,6 @@
 local GetDistance
 
-debug.replaceupvalue(Web.UpdateWebOnProcessMove, "CheckForIntersection", function(self, fromPlayer)
+debug_stickywebs.replaceupvalue(Web.UpdateWebOnProcessMove, "CheckForIntersection", function(self, fromPlayer)
 
 	if not self.endPoint then
 		self.endPoint = self:GetOrigin() + self.length * self:GetCoords().zAxis
@@ -54,7 +54,7 @@ debug.replaceupvalue(Web.UpdateWebOnProcessMove, "CheckForIntersection", functio
 
 end)
 
-debug.replacemethod("Web", "ModifyDamageTaken", function(self, damageTable, attacker, doer, damageType, hitPoint)
+debug_stickywebs.replacemethod("Web", "ModifyDamageTaken", function(self, damageTable, attacker, doer, damageType, hitPoint)
 	if damageType ~= kDamageType.Flame then
 		damageTable.damage = 0
 	end

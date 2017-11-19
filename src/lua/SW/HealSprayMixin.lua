@@ -1,6 +1,6 @@
 local kHealCylinderWidth, kRange, GetEntitiesInCylinder
 
-debug.replaceupvalue(HealSprayMixin.OnTag, "GetEntitiesInCone", function(self, player)
+debug_stickywebs.replaceupvalue(HealSprayMixin.OnTag, "GetEntitiesInCone", function(self, player)
 	local range = 0
 
 	local viewCoords = player:GetViewCoords()
