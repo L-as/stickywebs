@@ -1,0 +1,7 @@
+
+[master]
+name            = "Super sticky webs"
+tags            = ["Gameplay modification", "Balance", "Must be run on server"]
+autodescription = true
+description     = "README.md"
+preview         = "preview.jpg"
